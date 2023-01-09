@@ -64,7 +64,7 @@
         </figure>
 
     </main>
-    <footer></footer>
+
     <div>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facilis odit deleniti id soluta, iure
@@ -75,14 +75,27 @@
         <img src="img/growing-mentalhealth.svg" alt="brain" width="300">
     </section>
     <section>
-        <h2>menu</h2>
+        <h2>character</h2>
         <form action="murashko2211@gmail.com">
-            <input type="radio">indoor
+            <fieldset>
+                <legend>Indoor or outdoor?</legend>
+                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked >indoor</label>
+                <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+            </fieldset>
             <input type="text" name="email" placeholder="email address" required>
             <button type="submit">submit</button>
+            <fieldset>
+                <legend>Activity</legend>
+                <input type="checkbox" id="swimming" name="activity" value="swimming" checked ><label for="swimming">Swimming</label>
+                <input type="checkbox" id="running" name="activity" value="running"><label for="running">Running</label>
+                <input type="checkbox" id="jumping" name="activity" value="jumping"><label for="jumping">Jumping</label>
+            </fieldset>
 
         </form>
     </section>
+    <footer>
+        <p>No copyright -<a href="freeCodeCamp.org">freeCodeCamp.org</a></p>
+    </footer>
 
 </body>
 
